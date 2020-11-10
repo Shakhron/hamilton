@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<algorithm type="gamilton"/>
+	<task start.id="M"/> <!--goal.id="L"-->
+	<graph size = "14">
+		<node source="A" neighbour="B,C,D"/>
+		<node source="B" neighbour="A,E,D"/>
+		<node source="C" neighbour="A,D,F"/>
+		<node source="D" neighbour="A,B,C,F,E" />
+		<node source="E" neighbour="B,D,G,J"/>
+		<node source="F" neighbour="C,D,G,H"/>
+		<node source="G" neighbour="D,E,F,H,J"/>
+		<node source="H" neighbour="F,G,I" />
+		<node source="J" neighbour="E,G,K,N"/>
+		<node source="I" neighbour="K,H,L" />
+		<node source="N" neighbour="K,J,M" />
+		<node source="K" neighbour="J,N,M,L,I" />
+		<node source="M" neighbour="N,K,L" />
+		<node source="L" neighbour="K,I,M"  />
+<!--		<edge source="A" weight="3-B,4-D,5-C"/>-->
+<!--		<edge source="B" weight="3-A,5-E"/>-->
+<!--		<edge source="C" weight="3-F,5-A"/>-->
+<!--		<edge source="D" weight="3-E,4-A,4-F,6-G"/>-->
+<!--		<edge source="E" weight="3-D,4-G,5-B,7-J"/>-->
+<!--		<edge source="F" weight="3-C,4-D,5-G,6-H"/>-->
+<!--		<edge source="G" weight="6-D,4-E,5-F,7-H,4-J"/>-->
+<!--		<edge source="H" weight="6-F,7-G,4-I"/>-->
+<!--		<edge source="J" weight="7-E,4-G,5-N,6-K"/>-->
+<!--		<edge source="I" weight="4-H,8-K,4-L"/>-->
+<!--		<edge source="K" weight="8-I,2-L,3-M,3-N,6-J"/>-->
+<!--		<edge source="N" weight="5-J,3-K,4-M"/>-->
+<!--		<edge source="M" weight="3-K,4-L,4-N"/>-->
+<!--		<edge source="L" weight="4-I,2-K,4-M"/>-->
+	</graph>
+</root>

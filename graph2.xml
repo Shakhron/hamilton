@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<algorithm type="gamilton"/>
+	<task start.id="A"/> <!--goal.id="L"-->
+	<graph size = "14">
+		<node source="A" neighbour="B,D"/>
+		<node source="B" neighbour="A,C,D"/>
+		<node source="C" neighbour="B"/>
+		<node source="D" neighbour="A,B,E" />
+		<node source="E" neighbour="D"/>
+
+    </graph>
+</root>
